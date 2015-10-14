@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const SRC = path.resolve(__dirname, 'src/js');
-const BIN = path.resolve(__dirname, 'bin');
+const DEST = path.resolve(__dirname, 'public');
 
 module.exports = {
   entry: SRC,
@@ -11,7 +11,7 @@ module.exports = {
     extensions: ['', '.js']
   },
   output: {
-    path: BIN,
+    path: DEST,
     filename: 'js/app.js'
   },
   devtool: 'eval-source-map',
@@ -41,8 +41,8 @@ module.exports = {
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
-      server: { baseDir: ['./bin'] },
-      files: ['bin/*.html']
+      server: { baseDir: ['./' + DEST] },
+      files: [DEST + '/*.html']
     })
   ]
 };
