@@ -1,42 +1,52 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100italic,100,400italic);
 
-html {
-  box-sizing: border-box;
-}
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-}
+// Reset and dependencies
+@import "bootstrap/normalize";
+// @import "bootstrap/print";
+// @import "bootstrap/glyphicons";
 
-* {
-  &:before,
-  &:after {
-    box-sizing: inherit;
-  }
-}
+// Core CSS
+// @import "bootstrap/scaffolding";
+@import "bootstrap/type";
+// @import "bootstrap/code";
+// @import "bootstrap/grid";
+// @import "bootstrap/tables";
+// @import "bootstrap/forms";
+@import "bootstrap/buttons";
 
-.container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+// Components
+// @import "bootstrap/component-animations";
+// @import "bootstrap/dropdowns";
+// @import "bootstrap/button-groups";
+// @import "bootstrap/input-groups";
+// @import "bootstrap/navs";
+// @import "bootstrap/navbar";
+// @import "bootstrap/breadcrumbs";
+// @import "bootstrap/pagination";
+// @import "bootstrap/pager";
+// @import "bootstrap/labels";
+// @import "bootstrap/badges";
+// @import "bootstrap/jumbotron";
+// @import "bootstrap/thumbnails";
+// @import "bootstrap/alerts";
+// @import "bootstrap/progress-bars";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// @import "bootstrap/panels";
+// @import "bootstrap/responsive-embed";
+// @import "bootstrap/wells";
+// @import "bootstrap/close";
 
-  p {
-    color: rgb(80, 80, 80);
-    font-size: 32px;
-    font-style: italic;
-    line-height: 1;
-    margin-top: 0;
-  }
+// Components w/ JavaScript
+// @import "bootstrap/modals";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popovers";
+// @import "bootstrap/carousel";
 
-  .fabric {
-    color: rgb(200, 200, 200);
-    font-size: 80px;
-    font-weight: 100;
-    line-height: 1.2;
-    margin-top: 0;
-    text-align: center;
-  }
-}
-
+// Utility classes
+// @import "bootstrap/utilities";
+// @import "bootstrap/responsive-utilities";

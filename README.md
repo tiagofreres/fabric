@@ -21,7 +21,7 @@ As part of **fabric**'s strong commitment to TDD, **fabric** includes the powerf
 ## File Structure
 
     fabric
-    ├── bin
+    ├── public
     │   ├── css
     │   └── js
     └── src

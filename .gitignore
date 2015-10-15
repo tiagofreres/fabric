@@ -79,7 +79,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# Output files
-bin/css/*
-bin/js/*

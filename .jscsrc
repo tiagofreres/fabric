@@ -24,7 +24,7 @@
     },
 
     "excludeFiles": [
-        "bin/**",
+        "public/**",
         "node_modules/**"
     ]
 }
